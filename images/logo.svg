@@ -36,10 +36,10 @@
     <path d="M0,40 L10,40 M0,60 L10,60" stroke="url(#iconGradient)" stroke-width="1.5" stroke-linecap="round" />
   </g>
   
-  <!-- Text - NextGen -->
+  <!-- Text - TGen -->
   <g transform="translate(90, 55)">
     <text font-family="Arial, sans-serif" font-weight="bold" font-size="40" fill="url(#logoGradient)">
-      NextGen
+      TGen
     </text>
   </g>
   
@@ -51,6 +51,6 @@
   </g>
   
   <!-- Circuit line accents -->
-  <path d="M320,30 L350,30 L350,10 M380,50 L400,50 L400,70 L450,70" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none" />
-  <path d="M320,90 L340,90 L340,110 M370,110 L400,110 L400,90 L420,90" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  <path d="M220,30 L250,30 L250,10 M280,50 L300,50 L300,70 L350,70" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none" />
+  <path d="M220,90 L240,90 L240,110 M270,110 L300,110 L300,90 L320,90" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" fill="none" />
 </svg>
