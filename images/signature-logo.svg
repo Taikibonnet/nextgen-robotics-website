@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="penGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0cebeb" />
+      <stop offset="100%" stop-color="#20e3b2" />
+    </linearGradient>
+    <filter id="calligraphyEffect" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Main Signature Path -->
+  <g filter="url(#calligraphyEffect)">
+    <!-- Horizontal T bar -->
+    <path d="M80,80 L420,80" 
+          stroke="url(#penGradient)" 
+          stroke-width="8" 
+          stroke-linecap="round"
+          fill="none"
+          stroke-linejoin="round" />
+    
+    <!-- Diagonal line from right of T -->
+    <path d="M420,80 L320,150" 
+          stroke="url(#penGradient)" 
+          stroke-width="8" 
+          stroke-linecap="round"
+          fill="none"
+          stroke-linejoin="round" />
+    
+    <!-- Flowing G -->
+    <path d="M80,80 C60,120 100,180 150,160 C180,150 190,120 180,100 C170,80 130,90 120,110 L120,140" 
+          stroke="url(#penGradient)" 
+          stroke-width="8" 
+          stroke-linecap="round"
+          fill="none"
+          stroke-linejoin="round" />
+    
+    <!-- e -->
+    <path d="M180,130 C210,130 225,120 220,140 C215,160 190,160 180,140 C175,130 185,120 210,120" 
+          stroke="url(#penGradient)" 
+          stroke-width="7" 
+          stroke-linecap="round"
+          fill="none"
+          stroke-linejoin="round" />
+    
+    <!-- n -->
+    <path d="M230,140 C230,115 230,110 230,100 L230,150 C240,120 260,110 270,120 C280,130 280,150 280,160" 
+          stroke="url(#penGradient)" 
+          stroke-width="7" 
+          stroke-linecap="round"
+          fill="none"
+          stroke-linejoin="round" />
+  </g>
+  
+  <!-- Add subtle ink splatter effect -->
+  <g opacity="0.3">
+    <circle cx="83" cy="83" r="2" fill="#20e3b2" />
+    <circle cx="417" cy="83" r="2" fill="#20e3b2" />
+    <circle cx="235" cy="145" r="1.5" fill="#0cebeb" />
+    <circle cx="275" cy="155" r="1.5" fill="#0cebeb" />
+  </g>
+</svg>
