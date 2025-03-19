@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen Robotics - Your partner in robotic solutions</title>
+    <meta name="description" content="Connect with the best robot manufacturers and find innovative robotics solutions for your business or personal use.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <style>
         :root {
             --primary: #0cebeb;
@@ -46,19 +48,19 @@
         }
         
         .logo {
-            font-size: 28px;
-            font-weight: 700;
-            background: linear-gradient(90deg, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             display: flex;
             align-items: center;
         }
         
-        .logo span {
-            display: inline-block;
-            margin-right: 10px;
-            font-size: 32px;
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        
+        .logo-mobile {
+            display: none;
+            height: 40px;
+            width: auto;
         }
         
         nav ul {
@@ -96,6 +98,30 @@
         
         nav ul li a:hover::after {
             width: 100%;
+        }
+        
+        .language-selector {
+            margin-left: 30px;
+            position: relative;
+        }
+        
+        .language-selector select {
+            background-color: transparent;
+            color: var(--text);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 5px 10px;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+        
+        .language-selector select:hover {
+            border-color: var(--primary);
+        }
+        
+        .language-selector select option {
+            background-color: var(--dark);
         }
         
         .hero {
@@ -326,6 +352,126 @@
             transform: translateX(5px);
         }
         
+        .featured-robot {
+            padding: 80px 0;
+            background: linear-gradient(135deg, rgba(12, 235, 235, 0.05) 0%, rgba(32, 227, 178, 0.05) 100%);
+        }
+        
+        .featured-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .featured-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(12, 235, 235, 0.2);
+        }
+        
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .featured-info {
+            flex: 1;
+        }
+        
+        .featured-info h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .featured-info p {
+            margin-bottom: 30px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: rgba(224, 224, 224, 0.8);
+        }
+        
+        .spec-list {
+            margin-bottom: 30px;
+        }
+        
+        .spec-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .spec-icon {
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 16px;
+            color: var(--dark);
+        }
+        
+        .spec-text {
+            font-size: 16px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            padding: 100px 0;
+            background: linear-gradient(135deg, rgba(12, 235, 235, 0.1) 0%, rgba(32, 227, 178, 0.1) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            font-size: 42px;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px rgba(12, 235, 235, 0.3);
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: rgba(224, 224, 224, 0.8);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .secondary-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: transparent;
+            color: var(--text);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 50px;
+            border: 2px solid var(--primary);
+            transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+        
+        .secondary-button:hover {
+            background: var(--primary);
+            color: var(--dark);
+            transform: translateY(-5px);
+        }
+        
         footer {
             background: rgba(10, 10, 10, 0.9);
             padding: 60px 0 30px;
@@ -411,6 +557,16 @@
         }
         
         /* Responsive */
+        @media (max-width: 992px) {
+            .featured-content {
+                flex-direction: column;
+            }
+            
+            .featured-image, .featured-info {
+                width: 100%;
+            }
+        }
+        
         @media (max-width: 768px) {
             .robot-showcase {
                 flex-direction: column;
@@ -428,8 +584,31 @@
                 font-size: 18px;
             }
             
+            .logo img {
+                display: none;
+            }
+            
+            .logo-mobile {
+                display: block;
+            }
+            
             nav {
                 display: none;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .featured-info h2, .cta-section h2, .features h2, .news-section h2 {
+                font-size: 28px;
             }
         }
     </style>
@@ -438,7 +617,8 @@
     <div class="container">
         <header>
             <div class="logo">
-                <span>⚙️</span> NextGen Robotics
+                <img src="images/logo.svg" alt="NextGen Robotics Logo">
+                <img src="images/favicon.svg" alt="NextGen Robotics" class="logo-mobile">
             </div>
             <nav>
                 <ul>
@@ -448,6 +628,12 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li class="language-selector">
+                        <select id="language">
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                        </select>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -476,6 +662,39 @@
                 <h3>Domestic Robots</h3>
                 <p>Simplify your daily life with our robotic solutions for individuals.</p>
                 <a href="#" class="read-more">Discover <span>→</span></a>
+            </div>
+        </section>
+        
+        <section class="featured-robot">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="images/featured-robot.jpg" alt="ConstructBot X2 - Advanced Construction Robot">
+                    </div>
+                    <div class="featured-info">
+                        <h2>ConstructBot X2</h2>
+                        <p>Meet our latest innovation in construction robotics. The ConstructBot X2 combines AI-powered precision with robust engineering to revolutionize renovation projects.</p>
+                        <div class="spec-list">
+                            <div class="spec-item">
+                                <div class="spec-icon">✓</div>
+                                <div class="spec-text">Multi-surface adaptation technology</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">✓</div>
+                                <div class="spec-text">Advanced 3D mapping and scanning</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">✓</div>
+                                <div class="spec-text">Remote operation via secure cloud platform</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="spec-icon">✓</div>
+                                <div class="spec-text">Reduces project time by up to 40%</div>
+                            </div>
+                        </div>
+                        <a href="#" class="cta-button">Request a demo</a>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -547,6 +766,17 @@
                 </div>
             </div>
         </section>
+        
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to transform your business?</h2>
+                <p>Whether you're looking to optimize industrial processes or integrate smart robots into your home, we have the perfect solution for you.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="cta-button">View our robots</a>
+                    <a href="#" class="secondary-button">Contact our experts</a>
+                </div>
+            </div>
+        </section>
     </div>
     
     <footer>
@@ -555,6 +785,7 @@
                 <div class="footer-column">
                     <h3>NextGen Robotics</h3>
                     <p>Your partner in innovative robotic solutions for industry and individuals.</p>
+                    <img src="images/logo.svg" alt="NextGen Robotics" style="height: 50px; margin-top: 20px;">
                 </div>
                 <div class="footer-column">
                     <h3>Quick Links</h3>
@@ -596,5 +827,17 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        // Language switcher functionality
+        document.getElementById('language').addEventListener('change', function() {
+            const lang = this.value;
+            if (lang === 'fr') {
+                window.location.href = 'index-fr.html';
+            } else {
+                window.location.href = 'index.html';
+            }
+        });
+    </script>
 </body>
 </html>
