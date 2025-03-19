@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0cebeb" />
+      <stop offset="100%" stop-color="#20e3b2" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- T horizontal bar -->
+  <path d="M100,80 L400,80" stroke="url(#logoGradient)" stroke-width="15" stroke-linecap="round" filter="url(#shadow)" />
+  
+  <!-- T curve and G stylized -->
+  <path d="M350,80 C350,80 320,120 250,120 C200,120 150,110 120,140" 
+        stroke="url(#logoGradient)" stroke-width="15" fill="none" stroke-linecap="round" />
+  
+  <!-- G stylized -->
+  <path d="M230,100 C190,100 180,125 180,150 C180,175 200,190 230,190 C260,190 280,170 280,145 L280,130 L240,130" 
+        stroke="url(#logoGradient)" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- E -->
+  <path d="M300,120 L380,120 M300,120 L300,180 M300,150 L360,150 M300,180 L380,180" 
+        stroke="url(#logoGradient)" stroke-width="10" fill="none" stroke-linecap="round" />
+  
+  <!-- N -->
+  <path d="M400,120 L400,180 M400,120 L440,180 M440,120 L440,180" 
+        stroke="url(#logoGradient)" stroke-width="10" fill="none" stroke-linecap="round" />
+  
+  <!-- Robotics text (optional) -->
+  <text x="280" y="220" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="url(#logoGradient)" text-anchor="middle" filter="url(#shadow)">
+    Robotics
+  </text>
+</svg>
