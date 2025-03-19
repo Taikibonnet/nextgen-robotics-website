@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160" width="400" height="160">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0cebeb" />
+      <stop offset="100%" stop-color="#20e3b2" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- T horizontal bar (roof) -->
+  <path d="M40,90 L187,90" 
+        stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#subtleGlow)" />
+  
+  <!-- T vertical curved line flowing down -->
+  <path d="M106,90 Q106,120 66,130" 
+        stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#subtleGlow)" />
+  
+  <!-- G that follows the curve -->
+  <path d="M138,124 C93,117 64,157 121,158 C136,140 133,136 115,142 M140,140 C148,142 156,140 152,134 C143,127 137,132 133,138 C126,149 143,159 154,151" 
+        stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#subtleGlow)" />
+  
+  <!-- e -->
+  <path d="M162,140 Q162,122 172,122 Q182,122 182,140 Q182,158 172,158 Q162,158 162,140 M162,140 L182,140" 
+        stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#subtleGlow)" />
+  
+  <!-- n -->
+  <path d="M191,128 L191,158 M191,135 Q191,122 200,122 Q209,122 209,135 L209,158" 
+        stroke="url(#logoGradient)" stroke-width="3" fill="none" filter="url(#subtleGlow)" />
+  
+  <!-- Robotics text -->
+  <text x="230" y="140" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="url(#logoGradient)" filter="url(#subtleGlow)">Robotics</text>
+</svg>
