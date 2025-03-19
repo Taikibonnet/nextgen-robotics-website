@@ -1,10 +1,10 @@
-# NextGen Robotics Website
+# TGen Robotics Website
 
-A modern, responsive website for NextGen Robotics - connecting robot manufacturers with businesses and individuals.
+A modern, responsive website for TGen Robotics - connecting robot manufacturers with businesses and individuals.
 
 ## Project Overview
 
-This repository contains the website for NextGen Robotics, a robotics agency that bridges the gap between robot manufacturers and users across various sectors including industrial, renovation, and domestic applications.
+This repository contains the website for TGen Robotics, a robotics agency that bridges the gap between robot manufacturers and users across various sectors including industrial, renovation, and domestic applications.
 
 ## Features
 
@@ -26,6 +26,8 @@ This repository contains the website for NextGen Robotics, a robotics agency tha
 ## Structure
 
 - `index.html` - Main homepage
+- `index-fr.html` - French version of homepage
+- `contact.html` - Contact page with form
 - `images/` - Directory containing all website images
 - `css/` - Directory for stylesheet files (to be implemented)
 - `js/` - Directory for JavaScript files (to be implemented)
@@ -69,4 +71,4 @@ This project is proprietary and confidential. All rights reserved.
 
 ## Contact
 
-For any questions or suggestions, please reach out to [contact@nextgenrobotics.com](mailto:contact@nextgenrobotics.com)
+For any questions or suggestions, please reach out to [contact@tgenrobotics.com](mailto:contact@tgenrobotics.com)
