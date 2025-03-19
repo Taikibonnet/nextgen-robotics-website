@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0cebeb" />
+      <stop offset="100%" stop-color="#29ffc6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Robot Icon - Centered for favicon -->
+  <g transform="translate(10, 0) scale(1)">
+    <!-- Robot Head -->
+    <path d="M60,30 C60,20 50,10 40,10 L30,10 C20,10 10,20 10,30 L10,70 C10,80 20,80 30,80 L40,80 C50,80 60,80 60,70 Z" 
+          fill="#121212" stroke="url(#iconGradient)" stroke-width="3" />
+    
+    <!-- Robot Eye -->
+    <circle cx="35" cy="35" r="10" fill="url(#iconGradient)" filter="url(#glow)" />
+    
+    <!-- Robot Mouth -->
+    <path d="M20,55 L50,55 M20,65 L50,65" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Robot Antenna -->
+    <path d="M35,10 L35,0 M28,5 L42,5" stroke="url(#iconGradient)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Circuitry details -->
+    <path d="M15,45 L25,45 M45,45 L55,45" stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round" />
+  </g>
+</svg>
