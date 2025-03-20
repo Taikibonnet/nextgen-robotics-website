@@ -14,34 +14,26 @@
   <!-- Background circle -->
   <circle cx="50" cy="50" r="45" fill="#121212" />
   
-  <!-- T shape with symmetric horizontal bar -->
-  <path d="M25,35 L75,35" 
+  <!-- Grand T au milieu avec barre horizontale plus large -->
+  <path d="M20,35 L80,35" 
         stroke="url(#logoGradient)" 
-        stroke-width="5" 
+        stroke-width="8" 
         fill="none" 
         stroke-linecap="round"
         filter="url(#glow)" />
   
   <!-- T vertical line -->
-  <path d="M50,35 L50,55" 
+  <path d="M50,35 L50,65" 
         stroke="url(#logoGradient)" 
-        stroke-width="5" 
+        stroke-width="8" 
         fill="none" 
         stroke-linecap="round"
         filter="url(#glow)" />
   
-  <!-- Minimal N shape -->
-  <path d="M35,65 L35,55 L45,65 L45,55" 
+  <!-- Plus petit T par-dessus pour l'effet de bord -->
+  <path d="M25,35 L75,35 M50,35 L50,60" 
         stroke="url(#logoGradient)" 
-        stroke-width="3.5" 
-        fill="none" 
-        stroke-linecap="round"
-        filter="url(#glow)" />
-  
-  <!-- Minimal G shape -->
-  <path d="M60,60 C55,60 55,55 60,55 C65,55 65,60 60,60 M60,57.5 L65,57.5 L65,60" 
-        stroke="url(#logoGradient)" 
-        stroke-width="3.5" 
+        stroke-width="4" 
         fill="none" 
         stroke-linecap="round"
         filter="url(#glow)" />
