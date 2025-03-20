@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0cebeb" />
+      <stop offset="100%" stop-color="#20e3b2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle (optional) -->
+  <circle cx="50" cy="50" r="45" fill="#121212" />
+  
+  <!-- Minimal T with symmetric top -->
+  <path d="M20,40 L80,40" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" />
+  <path d="M50,40 L50,70" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" />
+  
+  <!-- Simplified GEN - just hint at the forms -->
+  <path d="M35,55 C35,45 40,45 45,50 M35,55 C35,65 40,65 45,60" stroke="url(#logoGradient)" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M55,50 L55,65 M55,50 L65,50 M55,65 L65,65" stroke="url(#logoGradient)" stroke-width="2" fill="none" stroke-linecap="round" />
+  <path d="M70,50 L70,65 M75,50 L75,65" stroke="url(#logoGradient)" stroke-width="2" fill="none" stroke-linecap="round" />
+</svg>
