@@ -12,9 +12,11 @@
   
   <!-- NexTGen logo - compact version for header -->
   <g transform="translate(10, 5)">
-    <!-- T section -->
-    <path d="M80,15 L120,15" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#glow)" />
-    <path d="M100,15 L100,35" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    <!-- Grand T au milieu -->
+    <path d="M25,15 L165,15 M95,15 L95,35" stroke="url(#logoGradient)" stroke-width="6" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    
+    <!-- T plus petit par-dessus -->
+    <path d="M30,15 L160,15 M95,15 L95,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
     
     <!-- NEX - ultra minimal -->
     <path d="M30,20 L30,35 M30,20 L40,35 M40,20 L40,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
@@ -22,9 +24,9 @@
     <path d="M70,20 L75,35 M70,35 L75,20" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
     
     <!-- GEN -->
-    <path d="M130,27 C130,22 135,20 140,20 C145,20 147,21 147,23 M130,27 C130,32 135,35 140,35 C145,35 147,33 148,31 M140,27 L148,27 M148,27 L148,31" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
-    <path d="M155,20 L155,35 M155,20 L165,20 M155,27 L162,27 M155,35 L165,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
-    <path d="M170,20 L170,35 M170,20 L180,35 M180,20 L180,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    <path d="M115,27 C115,22 120,20 125,20 C130,20 132,21 132,23 M115,27 C115,32 120,35 125,35 C130,35 132,33 133,31 M125,27 L133,27 M133,27 L133,31" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    <path d="M140,20 L140,35 M140,20 L150,20 M140,27 L147,27 M140,35 L150,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
+    <path d="M155,20 L155,35 M155,20 L165,35 M165,20 L165,35" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
   </g>
   
   <!-- ROBOTICS text -->
