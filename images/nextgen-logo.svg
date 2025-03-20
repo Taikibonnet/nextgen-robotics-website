@@ -17,6 +17,9 @@
   <!-- T vertical line -->
   <path d="M200,80 L200,120" stroke="url(#logoGradient)" stroke-width="4" fill="none" stroke-linecap="round" filter="url(#glow)" />
   
+  <!-- Grand T au milieu avec espace entre la barre horizontale et NEX-GEN -->
+  <path d="M115,80 L320,80 M200,80 L200,120" stroke="url(#logoGradient)" stroke-width="8" fill="none" stroke-linecap="round" filter="url(#glow)" />
+  
   <!-- NEX - ultra minimal -->
   <path d="M115,90 L115,120 M115,90 L135,120 M135,90 L135,120" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
   <path d="M145,90 L145,120 M145,90 L165,90 M145,105 L160,105 M145,120 L165,120" stroke="url(#logoGradient)" stroke-width="3" fill="none" stroke-linecap="round" filter="url(#glow)" />
